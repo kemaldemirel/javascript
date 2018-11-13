@@ -17,4 +17,4 @@ let arr = ['plun.png', 'orange.jpeg', 'apple.bmp'];
 let obj;
 
 
-//Добавлен третий коммит
+//Добавлен третий коммит и 4
