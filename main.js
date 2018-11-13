@@ -15,3 +15,6 @@ document.write(person.name);
 let arr = ['plun.png', 'orange.jpeg', 'apple.bmp'];
 
 let obj;
+
+
+//Добавлен третий коммит
