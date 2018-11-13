@@ -1,20 +1,18 @@
 'use strict'
 
-var number = 1;
-var string = 'Руддщ';
-var boolean = true;
+var num = 50;
 
-let person = {
-    name: 'John',
-    age: 19,
-    height: 180
+switch (num){
+    case num < 50:
+        console.log('false');
+        break;
+    
+    case num == 50:
+        console.log('true');
+        break;
+    
+    case 50: 
+        console.log('true');
+        break;
 }
 
-document.write(person.name);
-
-let arr = ['plun.png', 'orange.jpeg', 'apple.bmp'];
-
-let obj;
-
-
-//Добавлен третий коммит и 4
