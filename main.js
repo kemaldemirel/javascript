@@ -1,26 +1,38 @@
 'use strict'
 
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "test"
-};
+function addText(e){
+    e.preventDefault();
 
-console.log(options.name);
-options.bool = false;
-options.colors = {
-    border: "black",
-    background: "red"
-};
+    let li = document.createElement('li');
 
-delete options.bool;
+    li.textContent = text.value;
 
-console.log(options);
+    list.appendChild(li);
 
-for(let key in options){
-    console.log("Свойство " + key + " имеет значение " + options[key]);
+    text.value = "";
+
+    li.addEventListener('click', removeLi);
 }
 
-console.log(Object.keys(options).length);
+function removeLi(e){
+    let conf = confirm("Вы действительно хотите удалить элемент?");
+
+    if(conf){
+        list.removeChild(e.target);
+    }else{
+        return false
+    };
+}
+
+let text = document.querySelector("#text"),
+    btn = document.querySelector("#btn"),
+    list = document.querySelector("#main-list");
+
+
+btn.addEventListener('click', addText);
+
+
+
+
 
 

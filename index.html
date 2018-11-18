@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello, JS</h1>
-<script src="main.js"></script>
+    <div class="container">
+        <h1 class="center">Your ToDo List</h1>
+        <form action="">
+            <input type="text" class="form-control" id="text"  placeholder="Enter to do..">
+            <button class="btn btn-primary" id="btn">Enter</button>
+        </form>
+
+        <ol id="main-list"></ol>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
